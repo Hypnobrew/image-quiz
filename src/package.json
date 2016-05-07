@@ -1,0 +1,10 @@
+{
+  "name": "LearnQuiz",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A quiz for learning based on images",
+  "author": "Merryweather",
+  "dependencies": {
+    "express": "4.13.4"
+  }
+}
