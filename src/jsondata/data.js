@@ -1,6 +1,4 @@
 {
-    "questions": {
-        "Björk" : "Betula",
-        "Tall" : "Pinus sylvestris"
-    }
+   "Björk" : "Betula",
+   "Tall" : "Pinus sylvestris" 
 }

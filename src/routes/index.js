@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
+let flickr = require('../handlers/flickr');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Image quiz' });
+  let imageUrl = flickr.getImage('flower', function(imageUrl) {
+    res.render('index', { title: 'Image quiz', image: imageUrl }); 
+  });
 });
 
 module.exports = router;
