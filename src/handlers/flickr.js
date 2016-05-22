@@ -1,6 +1,6 @@
 let request = require('request');
 let math = require('./math');
-let credentials = request('../jsondata/credentials');
+let credentials = require('../jsondata/credentials');
 let baseUrl = 'https://api.flickr.com/services/rest/';
 
 module.exports.getImage = function (searchTerm, callback) {

@@ -1,6 +1,8 @@
 extends layout
 
 block content
-  h1 #{title}
-  p Welcome to #{title}
-  img(src=image)
+  div(class='container')
+    div(class='text-center')
+        h1 #{title}
+        img(src=image, class='img-responsive center-block')
+        input(class='btn btn-default', type='button', value='Input')
