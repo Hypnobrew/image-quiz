@@ -9,8 +9,10 @@ router.get('/', function(req, res, next) {
   var randomIndex = math.getRandomInt(0, numberOfQuizItems - 1);
   var item = data.items[randomIndex];
   
-  let imageUrl = flickr.getImage(item.latin, function(imageUrl) {
+  flickr.getImage(item.latin).then(function(imageUrl) {
     res.render('index', { title: 'Image quiz', image: imageUrl }); 
+  }).catch(function (error) {
+    res.render(error);
   });
 });
 

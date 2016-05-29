@@ -3,6 +3,8 @@ extends layout
 block content
   div(class='container')
     div(class='text-center')
-        h1 #{title}
+        div(class='page-header')
+            h1 #{title}
         img(src=image, class='img-responsive center-block')
-        input(class='btn btn-default', type='button', value='Input')
+        div
+            input(class='btn btn-default', type='button', value='Input')
