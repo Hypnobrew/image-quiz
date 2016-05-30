@@ -4,32 +4,27 @@ let flickr = require('../handlers/flickr');
 let data = require('../jsondata/data');
 let math = require('../handlers/math');
 
-router.get('/', function(req, res, next) {  
-  var numberOfQuizItems = data.items.length;
-  var randomIndex = math.getRandomInt(0, numberOfQuizItems - 1);
+router.get('/', function(req, res, next) {
   
-  var correctOption = data.items[randomIndex];
-  var firstIncorrectOption = data.items[math.getRandomInt(0, numberOfQuizItems - 1)];
-  var secondIncorrectOption = data.items[math.getRandomInt(0, numberOfQuizItems - 1)];
-
-  flickr.getImage(correctOption.latin).then(function(imageUrl) {
+  let numberOfItems = 3;
+  let indexes = math.getRandomInts(numberOfItems, 0, numberOfItems - 1);
+  let correctIndex = math.getRandomInt(0, numberOfItems - 1);
+  let correctOption = indexes[correctIndex];
+  let options = [];
+  
+  for (let index in indexes) {
+    let item = data.items[index];
+    options.push({
+      'status' : index == correctOption ? 'correct' : 'incorrect',
+      'latin' : item.latin
+    });
+  }
+  
+  flickr.getImage(data.items[correctIndex].latin).then(function(imageUrl) {
     res.render('index', {
       title: 'Image quiz',
       image: imageUrl,
-      options: [
-        {
-          'status' : 'correct',
-          'latin' : correctOption.latin
-        },
-        {
-          'status' : 'incorrect',
-          'latin' : firstIncorrectOption.latin
-        },
-        {
-          'status' : 'incorrect',
-          'latin' : secondIncorrectOption.latin
-        }
-      ]
+      options: options
     });
   }).catch(function (error) {
     res.render(error);
