@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
     });
   }
   
-  flickr.getImage(data.items[correctIndex].latin).then(function(imageUrl) {
+  flickr.getImage(data.items[correctOption].latin).then(function(imageUrl) {
     res.render('index', {
       title: 'Image quiz',
       image: imageUrl,
