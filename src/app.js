@@ -6,7 +6,8 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
-let routes = require('./routes/index');
+let home = require('./routes/index');
+let images = require('./routes/image');
 let app = express();
 
 app.set('views', path.join(__dirname, 'views'));
@@ -19,7 +20,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', home);
+app.use('/image', images);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

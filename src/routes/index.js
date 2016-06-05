@@ -24,6 +24,7 @@ router.get('/', function(req, res, next) {
     res.render('index', {
       title: 'Image quiz',
       image: imageUrl,
+      imagename: data.items[correctOption].latin,
       options: options
     });
   }).catch(function (error) {

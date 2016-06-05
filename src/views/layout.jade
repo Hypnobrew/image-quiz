@@ -20,6 +20,8 @@ html
         var model = home.views.quiz();
         model.init({
           'element': document.getElementById('content-container'),
-          'options': !{JSON.stringify(options)}
+          'options': !{JSON.stringify(options)},
+          'image': !{JSON.stringify(image)},
+          'imagename': !{JSON.stringify(imagename)},
         });
       });
