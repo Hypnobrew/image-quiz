@@ -1,10 +1,12 @@
 extends layout
 
 block content
-  div(class='container')
+  div(id='content-container', class='container')
     div(class='text-center')
         div(class='page-header')
             h1 #{title}
-        img(src=image, class='img-responsive center-block')
-        div(id='buttons-container', data-bind='foreach: options')
-            input(class='btn btn-default', type='button', data-bind='value: latin, click: $parent.selected')
+        div(class='jumbotron')
+            img(src=image, class='img-responsive center-block')
+        div(id='buttons-container', class='jumbotron', data-bind='foreach: options')
+            input(class='btn btn-default btn-block', type='button', data-bind='value: latin, click: $parent.selected, attr: { "data-status": status}, css: {"btn-success": $parent.haveSubmittedAnswer() && status == "correct", "btn-danger": $parent.haveSubmittedAnswer() && status == "incorrect"}')
+        input(class='btn btn-default btn-block', type='button', value='Next', data-bind='click: next')
