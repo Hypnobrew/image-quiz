@@ -3,10 +3,9 @@ extends layout
 block content
   div(id='content-container', class='container')
     div(class='text-center')
-        div(class='page-header')
-            h1 #{title}
-        div(class='jumbotron')
-            img(data-bind='attr:{src: image}, click: requestNewImage', class='img-responsive center-block')
-        div(id='buttons-container', class='jumbotron', data-bind='foreach: options')
+        h1 #{title}
+        div(class='well well-sm')
+            img(data-bind='attr:{src: image}, click: requestNewImage', class='img-responsive center-block img-thumbnail')
+        div(id='buttons-container', class='well well-sm', data-bind='foreach: options')
             input(class='btn btn-default btn-block', type='button', data-bind='value: latin, click: $parent.selected, attr: { "data-status": status}, css: {"btn-success": $parent.haveSubmittedAnswer() && status == "correct", "btn-danger": $parent.haveSubmittedAnswer() && status == "incorrect"}')
         input(class='btn btn-default btn-block', type='button', value='Next', data-bind='click: next')

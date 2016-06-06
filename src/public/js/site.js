@@ -36,7 +36,15 @@
             };
             
             self.next = function() {
-                location.reload(true);
+                $.ajax({
+                    type: 'POST',
+                    url: '/image/save',
+                    data: {'name': settings.imagename, 'url': self.image()},
+                    dataType: 'json',
+                    success: function name(imagedata) {
+                        location.reload(true);                 
+                    }
+                });
             };
         };
         return public;

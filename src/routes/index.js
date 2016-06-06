@@ -3,6 +3,7 @@ let router = express.Router();
 let flickr = require('../handlers/flickr');
 let data = require('../jsondata/data');
 let math = require('../handlers/math');
+let cache = require('../handlers/cache');
 
 router.get('/', function(req, res, next) {
   
@@ -19,16 +20,25 @@ router.get('/', function(req, res, next) {
       'latin' : item.latin
     });
   }
-  
-  flickr.getImage(data.items[correctOption].latin).then(function(imageUrl) {
+    
+  cache.getCacheData(data.items[correctOption].latin).then(function(cachedImageUrl) {
     res.render('index', {
       title: 'Image quiz',
-      image: imageUrl,
+      image: cachedImageUrl,
       imagename: data.items[correctOption].latin,
       options: options
     });
   }).catch(function (error) {
-    res.render(error);
+    flickr.getImage(data.items[correctOption].latin).then(function(imageUrl) {
+      res.render('index', {
+        title: 'Image quiz',
+        image: imageUrl,
+        imagename: data.items[correctOption].latin,
+        options: options
+      });
+    }).catch(function (error) {
+      res.render(error);
+    });      
   });
 });
 
