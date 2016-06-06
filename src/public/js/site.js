@@ -16,11 +16,18 @@
 
             self.options = ko.observableArray(settings.options);
             self.haveSubmittedAnswer = ko.observable(false);
+            self.haveSubmittedLatinAnswer = ko.observable(false);
+            self.stepTwoSelected = ko.observable(false);
             self.image = ko.observable(settings.image);
             self.selected = function (item) {
                 self.haveSubmittedAnswer(true);
             };
-            
+            self.showLatin = function() {
+                self.stepTwoSelected(true);
+            };
+            self.selectedLatin = function () {
+                self.haveSubmittedLatinAnswer(true);
+            };
             self.requestNewImage = function() {
               $.ajax({
                 type: 'POST',

@@ -17,6 +17,7 @@ router.get('/', function(req, res, next) {
     let item = data.items[index];
     options.push({
       'status' : index == correctOption ? 'correct' : 'incorrect',
+      'name': item.name,
       'latin' : item.latin
     });
   }
