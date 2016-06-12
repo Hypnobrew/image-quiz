@@ -1,8 +1,12 @@
 FROM node:latest
 
-COPY package.json /src/package.json
-RUN cd /src; npm install --production
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY . /src
-EXPOSE  8080
-CMD ["node", "/src/index.js"]
+COPY package.json /usr/src/app/
+RUN npm install --production
+
+COPY . /usr/src/app
+
+EXPOSE 3000
+CMD [ "npm", "start" ]
