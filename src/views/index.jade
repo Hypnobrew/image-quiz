@@ -10,6 +10,6 @@ block content
             input(class='btn btn-default btn-block', type='button', data-bind='value: name, click: $parent.selected, attr: { "data-status": status}, css: {"btn-success": $parent.haveSubmittedAnswer() && status == "correct", "btn-danger": $parent.haveSubmittedAnswer() && status == "incorrect"}')
         input(class='btn btn-default btn-block', type='button', value='Latin names', data-bind='click: showLatin, visible: haveSubmittedAnswer() && !stepTwoSelected()')
 
-        div(id='buttons-latin-container', class='well well-sm', data-bind='foreach: options, visible: stepTwoSelected')
+        div(id='buttons-latin-container', class='well well-sm', data-bind='foreach: latinOptions, visible: stepTwoSelected')
             input(class='btn btn-default btn-block', type='button', data-bind='value: latin, click: $parent.selectedLatin, attr: { "data-status": status}, css: {"btn-success": $parent.haveSubmittedLatinAnswer() && status == "correct", "btn-danger": $parent.haveSubmittedLatinAnswer() && status == "incorrect"}')
         input(class='btn btn-default btn-block', type='button', value='Next', data-bind='click: next, visible: stepTwoSelected')

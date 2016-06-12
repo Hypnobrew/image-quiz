@@ -15,6 +15,11 @@
             var self = this;
 
             self.options = ko.observableArray(settings.options);
+
+            var latins = settings.options.slice(0);
+            latins = latins.sort(function() {return .5 - Math.random()});
+            
+            self.latinOptions = latins;
             self.haveSubmittedAnswer = ko.observable(false);
             self.haveSubmittedLatinAnswer = ko.observable(false);
             self.stepTwoSelected = ko.observable(false);
