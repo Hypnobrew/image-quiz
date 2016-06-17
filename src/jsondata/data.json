@@ -1,16 +1,788 @@
 {
   "items": [
     {
-      "name": "Björk",
-      "latin": "Betula pendula"
+      "name": "Revsuga",
+      "latin": "Ajuga reptans"
+    },
+    {
+      "name": "Jättedaggkåpa",
+      "latin": "Alchemilla mollis"
+    },
+    {
+      "name": "Ulleternell",
+      "latin": "Anaphalis triplinervis"
+    },
+    {
+      "name": "Höstanemon",
+      "latin": "Anemone hupehensis"
+    },
+    {
+      "name": "Plymspirea",
+      "latin": "Aruncus dioicus"
+    },
+    {
+      "name": "Hasselört",
+      "latin": "Asarum europeum"
+    },
+    {
+      "name": "Höstaster",
+      "latin": "Aster novi-belgii (förr dumosus)"
+    },
+    {
+      "name": "Kaukasisk förgätmigej",
+      "latin": "Brunnera macrophylla"
+    },
+    {
+      "name": "Jätteprastkrage",
+      "latin": "Leucanthemum x superbum"
+    },
+    {
+      "name": "Höstsilverax, Brunette",
+      "latin": "Actaea simplex"
+    },
+    {
+      "name": "Praktriddarsporre",
+      "latin": "Delphinium elatum"
+    },
+    {
+      "name": "Fänrikshjärta",
+      "latin": "Dicentra formosa"
+    },
+    {
+      "name": "Löjtnantshjarta",
+      "latin": "Dicentra spectabilis"
+    },
+    {
+      "name": "Röd rudbeckia (röd solhatt)",
+      "latin": "Echinacea purpurea"
+    },
+    {
+      "name": "Vit rudbeckia, Alba",
+      "latin": "Echinacea purpurea alba"
+    },
+    {
+      "name": "Blå bolltistel",
+      "latin": "Echinops bannaticus (syn. ritro)"
+    },
+    {
+      "name": "Röd sockblomma",
+      "latin": "Epimedium x rubrum"
+    },
+    {
+      "name": "Rosenflockel",
+      "latin": "Eupatorium purpureum"
+    },
+    {
+      "name": "Praktnäva",
+      "latin": "Geranium himalayense"
+    },
+    {
+      "name": "Brudslöja",
+      "latin": "Gypsophila paniculata"
+    },
+    {
+      "name": "Rödbladig alunrot",
+      "latin": "Heuchera michrantha"
+    },
+    {
+      "name": "Brokfunkia",
+      "latin": "Hosta undulata"
+    },
+    {
+      "name": "Lavendel",
+      "latin": "Lavandula angustifolia"
+    },
+    {
+      "name": "Rosenstav",
+      "latin": "Liatris spicata"
+    },
+    {
+      "name": "Klippstånds",
+      "latin": "Ligularia dentata"
+    },
+    {
+      "name": "Kantnepeta",
+      "latin": "Nepeta fassenii"
+    },
+    {
+      "name": "Skuggröna",
+      "latin": "Pachysandra terminalis"
+    },
+    {
+      "name": "Höstflox",
+      "latin": "Phlox paniculata"
+    },
+    {
+      "name": "Strålrudbeckia",
+      "latin": "Rudbeckia fulgida"
+    },
+    {
+      "name": "Lammöron",
+      "latin": "Stachys byzantina"
+    },
+    {
+      "name": "Axveronica",
+      "latin": "Veronica spicata"
+    },
+    {
+      "name": "Vintergröna",
+      "latin": "Vinca minor"
+    },
+    {
+      "name": "Japanlönn (flera bladformer och bladfärger)",
+      "latin": "Acer palmatum"
+    },
+    {
+      "name": "Häggmispel",
+      "latin": "Amelanchier spicata"
+    },
+    {
+      "name": "Svartaronia (Hugin E-planta)",
+      "latin": "Aronia melanocarpa"
+    },
+    {
+      "name": "Häckberberis (röd och grönbladig)",
+      "latin": "Berberis thunbergii"
+    },
+    {
+      "name": "Syrenbuddleia",
+      "latin": "Buddleia davidii"
+    },
+    {
+      "name": "Småbladig buxbom",
+      "latin": "Buxus sempervirens"
+    },
+    {
+      "name": "Häckkaragan (vanlig häckväxt)",
+      "latin": "Caragana arborescens"
+    },
+    {
+      "name": "Katsura",
+      "latin": "Cercidiphyllum japonicum"
+    },
+    {
+      "name": "Korallkornell",
+      "latin": "Cornus alba 'Sibirica'"
+    },
+    {
+      "name": "Korsbarskornell",
+      "latin": "Cornus mas"
+    },
+    {
+      "name": "Hassel",
+      "latin": "Corylus avellana"
+    },
+    {
+      "name": "Ormhassel (variant av vanlig Hassel)",
+      "latin": "Corylus avellana 'Contorta"
+    },
+    {
+      "name": "Hackoxbar",
+      "latin": "Cotoneaster lucidus"
+    },
+    {
+      "name": "Trubbhagtorn",
+      "latin": "Crataegus monogyna"
+    },
+    {
+      "name": "Vårginst",
+      "latin": "Cyticus praecox"
+    },
+    {
+      "name": "Silverbuske",
+      "latin": "Eleagnus commutate"
+    },
+    {
+      "name": "Vingad benved",
+      "latin": "Euonymus alatus"
+    },
+    {
+      "name": "Benved",
+      "latin": "Euonymus fortunei"
+    },
+    {
+      "name": "Hybridforsythia",
+      "latin": "Forsythia x intermedia"
+    },
+    {
+      "name": "Mugröna (flera bladstorlekar)",
+      "latin": "Hedera helix"
+    },
+    {
+      "name": "Havtorn (hon och hanplantor)",
+      "latin": "Hippophoae rhamnoides"
+    },
+    {
+      "name": "Hortensia (flera sorter)",
+      "latin": "Hydrangea macrophylla"
+    },
+    {
+      "name": "Paradisbuske",
+      "latin": "Kolkwitzia amabilis"
+    },
+    {
+      "name": "Hybridgullregn",
+      "latin": "Laburnum x watereri 'Vossi"
+    },
+    {
+      "name": "Liguster (Lövfallande och vintergron finns)",
+      "latin": "Ligustrum vulgare"
+    },
+    {
+      "name": "Blåtry",
+      "latin": "Lonicera caerula"
+    },
+    {
+      "name": "Stjärnmagnolia",
+      "latin": "Magnolia stellata"
+    },
+    {
+      "name": "Mahonia",
+      "latin": "Mahonia aquifolium"
+    },
+    {
+      "name": "Bukettapel",
+      "latin": "Malus toringo var. Sargentii"
+    },
+    {
+      "name": "Doftschersrnin",
+      "latin": "Philadelphus coronarius"
+    },
+    {
+      "name": "Ölandstok (Flera sorter finns)",
+      "latin": "Potentilla fruticosa"
+    },
+    {
+      "name": "Lagerhägg",
+      "latin": "Prunus laurocerasus"
+    },
+    {
+      "name": "Hägg (Även trädform)",
+      "latin": "Prunus padus"
+    },
+    {
+      "name": "Slån",
+      "latin": "Prunus spinosa"
+    },
+    {
+      "name": "Rönnsumak (Även trädform)",
+      "latin": "Rhus typhina"
+    },
+    {
+      "name": "Måbar",
+      "latin": "Ribes alpinum"
+    },
+    {
+      "name": "Svart vinbar",
+      "latin": "Ribes nigrum"
+    },
+    {
+      "name": "Vresros",
+      "latin": "Rosa rugosa"
+    },
+    {
+      "name": "Fläder",
+      "latin": "Sambucus nigra"
+    },
+    {
+      "name": "Rönnspirea",
+      "latin": "Sorbaria sorbifolia"
+    },
+    {
+      "name": "Praktspirea",
+      "latin": "Spirea japonica"
+    },
+    {
+      "name": "Bukettspirea",
+      "latin": "Spirea x vanhouttei"
+    },
+    {
+      "name": "Stefanandra",
+      "latin": "Stephanandra incisa"
+    },
+    {
+      "name": "Syrén",
+      "latin": "Syringa vulgaris"
+    },
+    {
+      "name": "Olvon",
+      "latin": "Viburnum opulus"
+    },
+    {
+      "name": "Rosenprakttry",
+      "latin": "Weigela florida"
+    },
+    {
+      "name": "Koreagran (Fk Ultuna)",
+      "latin": "Abies koreana"
+    },
+    {
+      "name": "Nordmannsgran",
+      "latin": "Abies nordmanniana"
+    },
+    {
+      "name": "Ädelcypress (Alumii)",
+      "latin": "Chamaecyparis lawsoniana"
+    },
+    {
+      "name": "Hängcypress (Pendula)",
+      "latin": "Chamaecyparis nootkatensis"
+    },
+    {
+      "name": "Japansk ädelcypress (Nana Gracilis)",
+      "latin": "Chamaecyparis obtusa"
+    },
+    {
+      "name": "Ärtcypress (Filifera aurea)",
+      "latin": "Chamaecyparis pisifera"
+    },
+    {
+      "name": "Ginkgo",
+      "latin": "Ginkgo biloba"
+    },
+    {
+      "name": "Kinesisk en (Blaauw)",
+      "latin": "Juniperus chinensis"
+    },
+    {
+      "name": "Träd-en (f. suecia)",
+      "latin": "Juniperus communis"
+    },
+    {
+      "name": "krypande En (repanda)",
+      "latin": "Juniperus communis"
+    },
+    {
+      "name": "Amerikansk kryp-en (Andorra compakt)",
+      "latin": "Juniperus horizontalis"
+    },
+    {
+      "name": "Trädgårds-en (Mint Julep)",
+      "latin": "Juniperus x pfizeriana"
+    },
+    {
+      "name": "Europeisk Lärk",
+      "latin": "Larix decidua"
+    },
+    {
+      "name": "Kinesisk sekvoja",
+      "latin": "Metasequoia glyptostroboides"
+    },
+    {
+      "name": "Kryptuja (Sibirteppe E)",
+      "latin": "Microbiota decussata"
+    },
+    {
+      "name": "Gran",
+      "latin": "Picea abies"
+    },
+    {
+      "name": "Fågelbogran (Nidiformis)",
+      "latin": "Picea abies"
+    },
+    {
+      "name": "Sockertoppsgran (Conica)",
+      "latin": "Picea glauca"
+    },
+    {
+      "name": "Serbisk gran",
+      "latin": "Picea omorika"
+    },
+    {
+      "name": "Blågran (Glauca)",
+      "latin": "Picea pungens"
+    },
+    {
+      "name": "Cembratall",
+      "latin": "Pinus cembra"
+    },
+    {
+      "name": "Bergtall",
+      "latin": "Pinus mugo"
+    },
+    {
+      "name": "Liten bergtall (var.pumilio)",
+      "latin": "Pinus mugo"
     },
     {
       "name": "Tall",
       "latin": "Pinus sylvestris"
     },
     {
-      "name": "Solros",
-      "latin": "Helianthus annuus"
+      "name": "Idegran",
+      "latin": "Taxus baccata"
+    },
+    {
+      "name": "Dvärgväxande Japansk idegran (var. Nana)",
+      "latin": "Taxus cuspidata"
+    },
+    {
+      "name": "Hybrididegran (Hicksii)",
+      "latin": "Taxus x media"
+    },
+    {
+      "name": "Tuja",
+      "latin": "Thuja occidentalis"
+    },
+    {
+      "name": "Häcktuja (Brabant)",
+      "latin": "Thuja occidentalis"
+    },
+    {
+      "name": "Hiba",
+      "latin": "Thujopsis dolabrata"
+    },
+    {
+      "name": "Hemlock",
+      "latin": "Tsuga canadensis"
+    },
+    {
+      "name": "Hassel",
+      "latin": "Corylus avellana"
+    },
+    {
+      "name": "Klibbal",
+      "latin": "Alnus glutinosa"
+    },
+    {
+      "name": "Akta kastanj",
+      "latin": "Castanea sativa"
+    },
+    {
+      "name": "Hastkastanj",
+      "latin": "Aesculus hippocastanum"
+    },
+    {
+      "name": "Skogsek",
+      "latin": "Quercus robur"
+    },
+    {
+      "name": "Skogslind",
+      "latin": "Tilia cordata"
+    },
+    {
+      "name": "Vårtbjork",
+      "latin": "B. verrucosa pendula"
+    },
+    {
+      "name": "Ronn",
+      "latin": "Sorbus aucuparia"
+    },
+    {
+      "name": "Asp",
+      "latin": "Populus tremula"
+    },
+    {
+      "name": "Skogsalm",
+      "latin": "Ulmus glabra"
+    },
+    {
+      "name": "Bok",
+      "latin": "Fagus sylvatica"
+    },
+    {
+      "name": "Avenbok",
+      "latin": "Carpinus betulus"
+    },
+    {
+      "name": "Oxel",
+      "latin": "Sorbus intermedia"
+    },
+    {
+      "name": "Ask",
+      "latin": "Fraxinus excelsior"
+    },
+    {
+      "name": "Skogslonn",
+      "latin": "Acer platanoides"
+    },
+    {
+      "name": "SäIg",
+      "latin": "Salix caprea"
+    },
+    {
+      "name": "Gran",
+      "latin": "Picea abies"
+    },
+    {
+      "name": "Tail",
+      "latin": "Pinus sylvestris"
+    },
+    {
+      "name": "Lark",
+      "latin": "Larix decidua"
+    },
+    {
+      "name": "En",
+      "latin": "Juniperus communis"
+    },
+    {
+      "name": "Praktröllika",
+      "latin": "Achillea filipendulina"
+    },
+    {
+      "name": "äkta stormhatt",
+      "latin": "Aconitum napellus"
+    },
+    {
+      "name": "Akleja",
+      "latin": "Aquilegia vulgaris"
+    },
+    {
+      "name": "Malört",
+      "latin": "Artemicia absinthium"
+    },
+    {
+      "name": "Plymastilbe",
+      "latin": "Astilbe Chinensis-gruppen"
+    },
+    {
+      "name": "Stjärnflocka",
+      "latin": "Astrantia major"
+    },
+    {
+      "name": "Hjärtbergenia",
+      "latin": "Bergenia cordifolia"
+    },
+    {
+      "name": "Stor ormrot",
+      "latin": "Bistorta officinalis"
+    },
+    {
+      "name": "Pipört",
+      "latin": "Centranthus ruber"
+    },
+    {
+      "name": "Jättevädd",
+      "latin": "Cephalaria gigantea"
+    },
+    {
+      "name": "Flicköga",
+      "latin": "Coreopsis grandiflora"
+    },
+    {
+      "name": "Stor nunneört",
+      "latin": "Corydalis solida"
+    },
+    {
+      "name": "Murreva",
+      "latin": "Cymbalaria muralis"
+    },
+    {
+      "name": "Backnejlika",
+      "latin": "Dianthus deltoides"
+    },
+    {
+      "name": "Rysk martorn",
+      "latin": "Eryngium planum"
+    },
+    {
+      "name": "Gulltörel",
+      "latin": "Euphorbia polychroma"
+    },
+    {
+      "name": "Sommarljus",
+      "latin": "Gaura Iindheimeri"
+    },
+    {
+      "name": "Flocknäva",
+      "latin": "Geranium macrorrhizum"
+    },
+    {
+      "name": "Röd nejlikrot",
+      "latin": "Geum coccineum"
+    },
+    {
+      "name": "Solbrud",
+      "latin": "Helenium autumnale"
+    },
+    {
+      "name": "Daglilja (sorter",
+      "latin": "Hemerocallis (sorter)"
+    },
+    {
+      "name": "Ålandsrot",
+      "latin": "Inula helenium"
+    },
+    {
+      "name": "Strandiris",
+      "latin": "Iris sibirica"
+    },
+    {
+      "name": "Grekvädd",
+      "latin": "Knautia macedonica"
+    },
+    {
+      "name": "Fackellilja",
+      "latin": "Kniphofia urvaria"
+    },
+    {
+      "name": "Rosenplister",
+      "latin": "Lamium maculatum"
+    },
+    {
+      "name": "Spirstånds",
+      "latin": "Ligularia prezwalskii"
+    },
+    {
+      "name": "Purpurklätt",
+      "latin": "Lychnis coronaria"
+    },
+    {
+      "name": "Fackelblomster",
+      "latin": "Lythrum salicaria"
+    },
+    {
+      "name": "Rosenmalva",
+      "latin": "Malva alcea"
+    },
+    {
+      "name": "Strutbräken",
+      "latin": "Matteuccia struthiopteris"
+    },
+    {
+      "name": "Röd temynta",
+      "latin": "Monarda didyma"
+    },
+    {
+      "name": "Jättevallmo",
+      "latin": "Papaver pseudoorientale"
+    },
+    {
+      "name": "Blodfingerört",
+      "latin": "Potentilla atrosanguinea"
+    },
+    {
+      "name": "Gul nunneört",
+      "latin": "Pseudofumaria lutea"
+    },
+    {
+      "name": "Fläcklungört",
+      "latin": "Pulmonaria officinalis"
+    },
+    {
+      "name": "Violruta",
+      "latin": "Ruta graveolens"
+    },
+    {
+      "name": "Stäppsalvia",
+      "latin": "Salvia nemorosa"
+    },
+    {
+      "name": "Blodtopp",
+      "latin": "Sanguisorba officinalis"
+    },
+    {
+      "name": "Gullris",
+      "latin": "Solidago virgaurea"
+    },
+    {
+      "name": "Spetsmössa",
+      "latin": "Tiarella cordifolia"
+    },
+    {
+      "name": "Kransveronica",
+      "latin": "Veronicastrum virginicum"
+    },
+    {
+      "name": "Waldsteinia",
+      "latin": "Waldsteinia ternata"
+    },
+    {
+      "name": "Klotlönn (Globosum)",
+      "latin": "Acer platanoides"
+    },
+    {
+      "name": "Äkta Ornasbjörk (Dalecarlica)",
+      "latin": "Betula pendula"
+    },
+    {
+      "name": "Ormhassel (Contorta)",
+      "latin": "Corylus avellana"
+    },
+    {
+      "name": "Bukettapel (var. Sargenti fk Eskilstuna)",
+      "latin": "Malus toringo"
+    },
+    {
+      "name": "Pelarrönn (Fastigiata)",
+      "latin": "Sorbus aucuparia"
+    },
+    {
+      "name": "Syrén (Andenken an Ludvig Spath)",
+      "latin": "Syringa vulgaris"
+    },
+    {
+      "name": "Glanslind (Euchlora)",
+      "latin": "Tilia x europaea"
+    },
+    {
+      "name": "Japansk ädelcypress (Nana Gracilis)",
+      "latin": "Chamaecyparis obtusa"
+    },
+    {
+      "name": "Träd-en (f. Suecica)",
+      "latin": "Juniperus communis"
+    },
+    {
+      "name": "Sockertoppsgran (Conica)",
+      "latin": "Picea glauca"
+    },
+    {
+      "name": "Liten bergtall (var. Pumilio)",
+      "latin": "Pinus mugo"
+    },
+    {
+      "name": "Hybrididegran (Hicksii)",
+      "latin": "Taxus x media"
+    },
+    {
+      "name": "Hybrididegran (Hillii)",
+      "latin": "Taxux x media"
+    },
+    {
+      "name": "Flikbladig japanlönn (dissectum)",
+      "latin": "Acer palmatum"
+    },
+    {
+      "name": "Rosenhagtorn (Paul Scarlet)",
+      "latin": "Crataegus x media"
+    },
+    {
+      "name": "Bergbambu (Super jumbo)",
+      "latin": "Fargesia murielae"
+    },
+    {
+      "name": "Städsegrön Liguster (Atrovirens)",
+      "latin": "Ligustrum vulgare v.italicum"
+    },
+    {
+      "name": "Stjärnmagnolia (Royal star)",
+      "latin": "Magnolia stellata"
+    },
+    {
+      "name": "Ölandstok (Goldfinger)",
+      "latin": "Potentilla fruticosa"
+    },
+    {
+      "name": "Lagerhägg (Otto Luyken)",
+      "latin": "Prunus laurocerasus"
+    },
+    {
+      "name": "Vresros (Fru Dagmar Hastrup)",
+      "latin": "Rosa rugosa"
+    },
+    {
+      "name": "Vresros (Hansa)",
+      "latin": "Rosa rugosa"
+    },
+    {
+      "name": "Klotpil (Bullata)",
+      "latin": "Salix fragilis"
+    },
+    {
+      "name": "Liten stefanandra (Crispa)",
+      "latin": "Stephanandra incisa"
     }
   ]
 }
