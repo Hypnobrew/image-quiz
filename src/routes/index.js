@@ -8,33 +8,35 @@ let cache = require('../handlers/cache');
 router.get('/', function(req, res, next) {
   
   let numberOfItems = 3;
-  let indexes = math.getRandomInts(numberOfItems, 0, numberOfItems - 1);
-  let correctIndex = math.getRandomInt(0, numberOfItems - 1);
-  let correctOption = indexes[correctIndex];
+  let indexes = math.getRandomInts(numberOfItems, 0, data.items.length -1);
+  let electedCorrectItem = math.getRandomInt(0, numberOfItems - 1);
+  let electedCorrectIndex = indexes[electedCorrectItem];
+  let electedCorrectData = data.items[electedCorrectIndex];
   let options = [];
   
   for (let index in indexes) {
-    let item = data.items[index];
+    let imageIndex = indexes[index];
+    let option = data.items[imageIndex];
     options.push({
-      'status' : index == correctOption ? 'correct' : 'incorrect',
-      'name': item.name,
-      'latin' : item.latin
+      'status' : imageIndex == electedCorrectIndex ? 'correct' : 'incorrect',
+      'name': option.name,
+      'latin' : option.latin
     });
   }
     
-  cache.getCacheData(data.items[correctOption].latin).then(function(cachedImageUrl) {
+  cache.getCacheData(electedCorrectData.latin).then(function(cachedImageUrl) {
     res.render('index', {
       title: 'Image quiz',
       image: cachedImageUrl,
-      imagename: data.items[correctOption].latin,
+      imagename: electedCorrectData.latin,
       options: options
     });
   }).catch(function (error) {
-    flickr.getImage(data.items[correctOption].latin).then(function(imageUrl) {
+    flickr.getImage(electedCorrectData.latin).then(function(imageUrl) {
       res.render('index', {
         title: 'Image quiz',
         image: imageUrl,
-        imagename: data.items[correctOption].latin,
+        imagename: electedCorrectData.latin,
         options: options
       });
     }).catch(function (error) {
