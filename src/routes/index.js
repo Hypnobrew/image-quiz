@@ -1,6 +1,7 @@
 let express = require('express');
 let router = express.Router();
 let flickr = require('../handlers/flickr');
+let wikipedia = require('../handlers/wikipedia');
 let data = require('../jsondata/data');
 let math = require('../handlers/math');
 let cache = require('../handlers/cache');
@@ -32,7 +33,8 @@ router.get('/', function(req, res, next) {
       options: options
     });
   }).catch(function (error) {
-    flickr.getImage(electedCorrectData.latin).then(function(imageUrl) {
+
+    wikipedia.getImage(electedCorrectData.latin).then(function(imageUrl) {
       res.render('index', {
         title: 'Image quiz',
         image: imageUrl,
@@ -41,7 +43,20 @@ router.get('/', function(req, res, next) {
       });
     }).catch(function (error) {
       res.render(error);
-    });      
+    });  
+
+
+
+    // flickr.getImage(electedCorrectData.latin).then(function(imageUrl) {
+    //   res.render('index', {
+    //     title: 'Image quiz',
+    //     image: imageUrl,
+    //     imagename: electedCorrectData.latin,
+    //     options: options
+    //   });
+    // }).catch(function (error) {
+    //   res.render(error);
+    // });      
   });
 });
 

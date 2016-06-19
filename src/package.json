@@ -19,6 +19,7 @@
     "request": "2.72.0",
     "jade": "~1.11.0",
     "serve-favicon": "~2.3.0",
-    "node-cache": "3.2.1"
+    "node-cache": "3.2.1",
+    "nodemw": "0.10.1"
   }
 }
